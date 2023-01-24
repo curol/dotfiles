@@ -1,0 +1,22 @@
+#####################################################################
+# .aliases
+#
+# .aliases stores all aliases. 
+#####################################################################
+
+# Bat aliases https://github.com/eth-pbat-extras/blob/master/README.md#bat-extras
+# On Mac, bat = `bat`. On Linux, bat = `batcat`.
+export BAT_COMMAND="bat"
+if ! [ -x "$(command -v $BAT_COMMAND)" ]; then
+  export BAT_COMMAND="batcat"
+fi
+alias less="${BAT_COMMAND}"
+alias cat="${BAT_COMMAND} --plain --paging=never"
+alias diff='batdiff'
+alias man='batman'
+alias pp='prettybat'
+alias watch='batwatch'
+
+# Other aliases
+alias vim=nvim
+alias pn=pnpm

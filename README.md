@@ -78,9 +78,11 @@ Commands in `.zshrc` should be:
 
 - [sharkdp/bat](https://github.com/sharkdp/bat)
 
+- [eth-p/bat-extras](https://github.com/eth-p/bat-extras)
+
 - [zsh](https://github.com/zsh-users/zsh)
 
-> If not installed, install requirements using your package manager: `sudo apt-get install rsync git rg fzf fd-find bat zsh`
+> If not installed, install requirements using your package manager 
 
 ## Stack
 
@@ -109,6 +111,12 @@ sudo apt-get install -y zsh fzf ripgrep fd-find bat rsync git
 
 # If using apt, you need to link fdfind to fd
 ln -s $(which fdfind) /usr/bin/fd 
+
+# Install bat-extras
+git clone https://github.com/eth-p/bat-extras ${XDG_DATA_HOME:-"$HOME/.local/share"}/bat-extras
+cd ${XDG_DATA_HOME:-"$HOME/.local/share"}/bat-extras
+./install.sh
+fd --type f --hidden --no-ignore --full-path --absolute-path  --max-depth 2 'bin' -x ln -s '{}' ${XDG_BIN_HOME:-"$HOME/.local/bin"}/'{/}'
 ```
 
 *brew*

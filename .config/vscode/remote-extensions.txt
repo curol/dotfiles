@@ -1,0 +1,15 @@
+bierner.markdown-mermaid
+bradlc.vscode-tailwindcss
+dbaeumer.vscode-eslint
+eamodio.gitlens
+EditorConfig.EditorConfig
+esbenp.prettier-vscode
+foxundermoon.shell-format
+JannisX11.batch-rename-extension
+mads-hartmann.bash-ide-vscode
+ms-azuretools.vscode-docker
+ms-vscode.js-debug-nightly
+timonwong.shellcheck
+unifiedjs.vscode-mdx
+VisualStudioExptTeam.intellicode-api-usage-examples
+VisualStudioExptTeam.vscodeintellicode
